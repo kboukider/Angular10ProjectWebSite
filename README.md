@@ -2,9 +2,6 @@ Ce projet a été généré avec [Angular CLI](https://github.com/angular/angula
 
 # Développement et maintenance du site du Master CCI.
 
-## Lien vers la vidéo de présentation du projet
-
-https://onedrive.live.com/?authkey=%21ADQskznyKB7e7hY&cid=338667492EFF5DEB&id=338667492EFF5DEB%21401&parId=root&o=OneUp
 
 ## Prérequis
 
@@ -106,9 +103,3 @@ Pour résoudre cette erreur il faut mettre à jour firebase tools et se connecte
 	-----
 		firebase deploy
 	-----
-
-## Contacts
-amina.rhaiem.94@gmail.com
-kboukider@hotmail.com
-hiba.chamek@gmail.com
-boureninesylia7@gmail.com
