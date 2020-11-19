@@ -1,0 +1,19 @@
+<div class="top-color-bar"></div>
+<mat-toolbar class="mat-elevation-z0 transparent" style="min-height: 80px">
+  <div class="toolbar-content">
+    <img class="logo" src="assets/sp-logo.png" alt="Logo" width="50px">
+    <span class="title-text" routerLink="/home" >Anciens CCI</span>
+    <div class="toolbar-nav-buttons">
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/home">Accueil</button>
+      <a href="https://www.cci.univ-tours.fr/" target="_blank">
+        <button mat-button color="accent" routerLinkActive="active-list-item" href="https://www.cci.univ-tours.fr/"> Le Master</button></a>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/statistics">Statistiques</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/forum">Forum</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/profile">Profiles</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="auth/signup" *ngIf="!isAuth" >Inscription</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="auth/signin" *ngIf="!isAuth" >Connexion</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="auth/signin" (click)="onSignOut()" *ngIf="isAuth" style="cursor: pointer" >Déconnexion</button>
+
+    </div>
+  </div>
+</mat-toolbar>

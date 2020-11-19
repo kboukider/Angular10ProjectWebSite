@@ -1,0 +1,19 @@
+<div style="display: block">
+  <canvas mdbChart
+      [chartType]="chartType"
+      [datasets]="chartDatasets"
+      [labels]="chartLabels"
+      [colors]="chartColors"
+      [options]="chartOptions"
+      [legend]="true"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)">
+  </canvas>
+</div>
+<br>
+<div class="form-row justify-content-center">
+<div class="button" routerLink="/statistics"
+style="color: #01AB99; border:solid; font-weight: bold;text-align: center; width: 150px;font-size:larger;">Retour
+
+</div>
+</div>

@@ -1,0 +1,62 @@
+<div class="toolbar-nav-buttons">
+  <div class="carousel-container">
+  <mdb-carousel [animation]="'slide'">
+    <mdb-carousel-item *ngFor="let slide of slides; let i = index">
+      <div class="carousel-image-container">
+        <img class="d-block w-100 carousel-image" src={{slide}} alt="Slide image">
+      </div>
+    </mdb-carousel-item>
+  
+    <div class="slide-content-box">
+      <h3 class="slide-text">Bienvenue dans le réseau des anciens  </h3>
+      <br>
+      <h3 class="slide-text"> étudiants du master CCI </h3>
+      <br>
+      <h3 class="slide-text">Université de Tours</h3>
+  
+      
+    </div>
+  
+  </mdb-carousel>
+  </div>
+
+
+  <mat-card class="main-container overlap-up home-card mat-elevation-z0" style="width:70%;">
+    <mat-card-content>
+      <div class="card-top-text-container">
+        <h1>Statistiques</h1>
+        <p>
+          Veuillez trouver ci dessous, <br>
+
+          les dernières statistiques des anciens CCI
+        </p>
+        
+      </div>
+
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/type-employeur">Type d'employeur</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/moyen-obtention-emploi">Moyen d'obtention d'emploi</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/spécialité-informatique">Spécialité informatique</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/secteur-activité">Secteur d'activité</a>
+    </li>
+  </ul>
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+    </mat-card-content>
+
+  </mat-card>
+
+  </div>
+

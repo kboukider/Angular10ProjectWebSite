@@ -1,0 +1,18 @@
+@import "../../styles.scss";
+
+.footer-container {
+  height: 100px;
+  margin-top: 50px;
+  position: relative;
+  
+  width: 100%;
+  background-color: transparentize(mat-color($corporate-app-accent),0.3);
+}
+
+.footer-icon {
+  margin: 10px;
+}
+
+a {
+  outline: none;
+}

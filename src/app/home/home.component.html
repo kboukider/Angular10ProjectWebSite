@@ -1,0 +1,128 @@
+
+<div class="toolbar-nav-buttons">
+  <div class="carousel-container">
+  <mdb-carousel [animation]="'slide'">
+    <mdb-carousel-item *ngFor="let slide of slides; let i = index">
+      <div class="carousel-image-container">
+        <img class="d-block w-100 carousel-image" src={{slide}} alt="Slide image">
+      </div>
+    </mdb-carousel-item>
+  
+    <div class="slide-content-box">
+      <h3 class="slide-text">Bienvenue dans le réseau des anciens  </h3>
+      <br>
+      <h3 class="slide-text"> étudiants du master CCI </h3>
+      <br>
+      <h3 class="slide-text">Université de Tours</h3>
+  
+    
+    </div>
+  
+  </mdb-carousel>
+  </div>
+  
+  <mat-card class="main-container overlap-up home-card mat-elevation-z0">
+    <mat-card-content>
+      <div class="card-top-text-container">
+        <h1 style="margin-left: 0px;">Bienvenue!</h1>
+        <p>
+          Cette platforme du réseau des anciens étudiants du master CCI de l'université de Tours regroupe l'ensemble 
+          des nouveaux et des anciens étudiants pour faciliter les échanges : offres de stage, emplois, 
+          opportunités d'affaires, actualités et annuaire des membres.
+        </p>
+        <div style="width: 75%; margin: 0 auto;">
+          <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+        </div>
+      </div>
+  
+      <mat-accordion class="home-accordion">
+        <mat-expansion-panel class="home-accordion-panel mat-elevation-z0" [expanded]="false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h3 style="margin-left: 0;">Pourquoi cette platforme?</h3>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div>
+            
+            
+            <div class="right-aligned-image" style="width: 33%">
+              <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+              <i class="image-caption">
+                Journée portes ouvertes du 07 février 2020.
+              </i>
+            </div>
+  
+            <p>
+              Le site va permettre un échange et un partage d’expériences entre les anciens et les nouveaux étudiants.
+              Les anciens du Master seront mis en relation avec nouveaux étudiants et pourront par la suite les orienter en partageant des cours, des sites et des vidéos pour les aider à se familiariser avec les langages et les technologies qui seront étudiés en cours mais aussi les guider dans la recherche de stage en montrant les ficelles et les techniques avec lesquelles il faut s’imprégner pour une recherche de stage fructueuse et rapide.</p>
+             
+            
+          </div>
+            <div>
+              
+  
+  
+            </div>
+        </mat-expansion-panel>
+  
+        <mat-expansion-panel class="home-accordion-panel mat-elevation-z0">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h3 style="margin-left: 0;">Avantages de ce réseau</h3>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+  
+          <p> Le site a été crée dans le but de maintenir le contact entre les anciens du master CCI de Tours afin d’élargir leurs réseaux professionnels et personnels.</p>
+          
+          <p> Ce site vise à cultiver un lien de solidarité entre les anciens et actuels étudiants du Master et prolonger les liens de camaraderie afin d’assurer la promotion et l'image de la formation aux yeux des professionnels.</p>
+  
+        </mat-expansion-panel>
+  
+        <mat-expansion-panel class="home-accordion-panel mat-elevation-z0">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h3 style="margin-left: 0;">Historique du master</h3>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+  
+          <p>Le master date de 1992, l’ancêtre du Master CCI est le premier (ordre chronologique) diplôme professionnel de niveau bac+5 de l’UFR Sciences et Techniques.</p>
+  
+          <p>Au cours de ses 26 années d’existence, il a eu plusieurs dénominations : DESS double compétence en informatique, puis DESS Compétence Complémentaire en Informatique (CCI).</p>
+  
+          <p>Depuis 2004, avec la mise en place du LMD, il est désigné sous le nom de Master CCI, spécialité de toutes les mentions de masters de l’Université de Tours.</p>
+  
+          <p>Le chemin parcouru depuis 26 ans est important. A noter la mise en place en 1999 d’une version délocalisée au Maroc qui a accueilli en moyenne 15 étudiants par an pendant 10 
+          ans et en 2000 d’un diplôme d’université (DU CCI) en formation continue. </p>
+  
+        </mat-expansion-panel>
+  
+        <mat-expansion-panel class="home-accordion-panel mat-elevation-z0">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h3 style="margin-left: 0;">Contact </h3>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+              <h3>Adresse</h3>
+              <p>Faculté de Sciences et Techniques, Bâtiment L</p>
+              <p>1 avenue Monge, Parc de Grandmont</p>
+              <p>37200 Tours.</p>
+          
+              <h3>Sécrétariat</h3>
+              <p>Ouvert de 9H à 18H</p>
+              <p>+33 2 47 36 70 20</p>
+              <p>valerie.jamin@univ-tours.fr</p>
+                                      
+                                 
+  
+  
+  
+        </mat-expansion-panel>
+  
+      </mat-accordion>
+  
+    </mat-card-content>
+  </mat-card>
+  </div>
+  
+  
+  

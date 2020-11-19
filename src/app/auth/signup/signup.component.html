@@ -1,0 +1,59 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<br>
+<br>
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+        <div class="card">
+        <div class="card-header"
+            style="color: #01AB99; font-size: 200%; text-align: center; ">Création de compte</div>
+            <hr>
+         
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+     <div class="form-row justify-content-center">
+        <div class="input-group-append">
+        <span class="input-group-text"><i class="fa fas fa-envelope"></i></span>
+        <label for="email"></label>
+        <input type="text"
+               id="email"
+               class="form-control"
+               formControlName="email"
+               placeholder="E-mail*"
+               style="width: 300px;height: 30px;">
+               
+      </div>
+     </div>
+     <br>
+     <br>
+
+
+     <div class="form-row justify-content-center">
+      <div class="input-group-append">
+      <span class="input-group-text"><i class="fa fas fa-key"></i></span>
+        <label for="password"></label>
+        <input type="password"
+               id="password"
+               class="form-control"
+               formControlName="password"
+               placeholder="mot de passe*"
+               style="width: 300px;height: 30px;">
+               
+      </div>
+      </div>
+      <br>
+
+      <div class="form-row justify-content-center">
+      <button class="btn btn-light"
+              type="submit"
+              [disabled]="signupForm.invalid"
+              style="color: #01AB99; border:solid; font-weight: bold; ">Créer un compte</button>
+      </div> 
+      <br> <p style="text-align: center;"> *Mentions obligatoires </p> <br>       
+    </form>
+    <p class="text-danger">{{ errorMessage }}</p>
+  </div>
+</div>
